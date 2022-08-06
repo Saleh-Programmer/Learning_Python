@@ -4,7 +4,7 @@
 
 # import essential modules
 import random , os
-from timeit import repeat
+
 
 os.system("cls") # used for clear terminal
 
