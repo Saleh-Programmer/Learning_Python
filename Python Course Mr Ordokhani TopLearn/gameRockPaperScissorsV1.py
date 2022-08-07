@@ -5,21 +5,22 @@
 # import essential modules
 import random , os
 
-
 os.system("cls") # used for clear terminal
 
 totalChoice={0:"rock",1:"paper",2:"scissors"} # define a dictionary for match number to choice
 
-computerRandomChoice = random.randint(0,2) 
 
-print("Welcom to Rock_Paper_Scissors Game\n--------\n0-->rock \n1-->paper  \n2-->scissors\n\n\nTO EXIT ENTER 1000\n----------------------")
+
 
 while True:
+    
+    print("Welcom to Rock_Paper_Scissors Game\n--------\n0-->rock \n1-->paper  \n2-->scissors\n\n\nTO EXIT ENTER 1000\n----------------------")
     userChoice= int(input("please enter your choice: "))
+    computerRandomChoice = random.randint(0,2) 
 
     if userChoice==1000:
         exit()
-        
+    os.system("cls") # used for clear terminal
     if userChoice>=0 and userChoice<=2:
         if (computerRandomChoice==userChoice):
             print("You have equal choice\n\n\n")
